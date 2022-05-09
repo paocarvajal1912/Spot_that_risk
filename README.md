@@ -1,20 +1,23 @@
 # Spot_that_risk
 
-This report shows an x-ray of the fund, including the position, the tracking error, the trqacking error decomposition, the stand alone risk and diversification benefits, and the sensitivity above the benchmark to changes in the S&P500.
+This report shows a risk x-ray of the fund, including position and risk attribution. 
+Specifically, the report shows relative and absolute position, total portfolio tracking error, tracking error deconposition into allocation and selection effect, stand alone risk, diversification benefits, sensitivity above the benchmark to changes in the S&P500 using beta, as well as the portfolio bigger contributors and diversifiers of risk.
 
 
 
 ## Technology
 
-* Engine in Matlab
-* Data coming from Bloomberg API on Excel, , and from SQL databases for local securities
-* Excel for the display of the calculation on MatLab
-* Pdf generated from an export on Excel
+* Engine it was made in `Matlab`
+* The data is coming from `Bloomberg API` on `Excel`, together with `SQL databases` for local securities
+* `Excel`is used for the graphs and general display of the calculation made in MatLab
+* `Èxcel`is used to generate the pdf file report as an export
 ---
 
 ## Usage
 
-On the overview for a single fund, the following sections are presented:
+Below you will see images of the report. The first one is of the Overview, and the other are some of the asset classes.
+
+The following are more specifics of each section:
 
 1) **Position OW/UW:** Relative position with respect to the benchmark (Overweight and Underweight)
 
@@ -48,6 +51,19 @@ Then, for each asset class, a similar analysis is made over the subasset classes
 ![SubClasses_Fund](Images/2_Risk-Report_IntlEquityFundA.jpg)
 
 ![SubClasses_Fund](Images/3_Risk-Report_LocalEquityFundA.jpg)
+
+Obs: Originally the report was generated in spanish, so a version in spanish is also added in the folder.
+
+Asset classes in Spanish are:
+
+> RVI: Intl equity (Renta Variable Internacional)
+
+> RVN: Local Equity (Renta Variable Nacional)
+
+> RFI: Intl Fixed Income (Renta Fija Internacional)
+
+> RFN: Local Fixed INcome (Renta Fija Nacional)
+
 
 ---
 ## Contributors
