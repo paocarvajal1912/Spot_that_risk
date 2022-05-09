@@ -7,7 +7,7 @@ This report shows an x-ray of the fund, including the position, the tracking err
 ## Technology
 
 * Engine in Matlab
-* Data coming from Bloomberg API on Excel
+* Data coming from Bloomberg API on Excel, , and from SQL databases for local securities
 * Excel for the display of the calculation on MatLab
 * Pdf generated from an export on Excel
 ---
@@ -16,26 +16,38 @@ This report shows an x-ray of the fund, including the position, the tracking err
 
 On the overview for a single fund, the following sections are presented:
 
-1) Relative position with respect to the benchmark Overweigh and Underweight
+1) **Position OW/UW:** Relative position with respect to the benchmark (Overweight and Underweight)
 
-2) Absolute position of each asset class
+2) **Absolute position** of each asset class in the portfolio
 
-3) Volatility stand alone of aseet classes, total, and diversification benefit
+3) **Volatility (1-month):**
 
-4) Monthly Tracking Error per asset class, and total
+>3.1) Stand alone of each asset (sub-asset) class; 
 
-5) Relative sensitivity of each asset class to a +5% move of the S&P500 with respect to the bnenchmark
+>3.2) Total risk and Benchmark risk, which are the portfolio and benchmark total volatility;
+    
+>3.3) Diversification benefit (which is the difference between the aggregation of all volatilities minus the portfolio total volatility)
 
-6) Securities that generated the top 10 major and minor contributions to the Traking Error
+4) **Monthly ex-ante tracking error** contribution per asset class, and total tracking error of the portfolio against its benchmark. The grpah shows with different colors the decomposition per allocation and selection effects.
+
+5) **Beta Fund Sensitivity Gap:** shows the relative sensitivity of each asset (or sub asset) class to a +5% move of the S&P500, above the bennchmark.
+
+6) In the tables below are listed:
+
+>6.1) **Top Tracking Error Contributors:** Securities that generated the top 10 major contributions to the Traking Error of the Fund (Overview), or asset class (in the asset class view)
+    
+>6.2) **Top 10 Trackin Error Diversifiers:** Securities that generated the top 10 major contributions to diversification, and so decreasing the Traking Error, of the fund 8overview), or in the asset class (asset class view)
 
 
 
-![Overview_Individual_Fund](Images/1_Overview_Individual_Fund.png)
+![Overview_Individual_Fund](Images/1_Risk-Report_OverviewFundA.jpg)
 
 
-Then, for each asset class, a similar analysis is made over the subasset classes, as can be seen in the picture below.
+Then, for each asset class, a similar analysis is made over the subasset classes, as can be seen in the pictures below.
 
-![SubClasses_Fund](Images/1_Overview_Individual_Fund.png)
+![SubClasses_Fund](Images/2_Risk-Report_IntlEquityFundA.jpg)
+
+![SubClasses_Fund](Images/3_Risk-Report_LocalEquityFundA.jpg)
 
 ---
 ## Contributors
