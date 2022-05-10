@@ -1,21 +1,56 @@
 # Spot_that_risk
 
-This report shows a risk x-ray of the fund, including position and risk attribution. 
-Specifically, the report shows relative and absolute position, total portfolio tracking error, tracking error deconposition into allocation and selection effect, stand alone risk, diversification benefits, sensitivity above the benchmark to changes in the S&P500 using beta, as well as the portfolio bigger contributors and diversifiers of risk.
+Here you will find investment management reports that I have constructed using Matlab and Excel.
+
+The report includes the portfolio position, active risk attribution, and beta sensitivity. The report shows an x-ray of the portfolio by asset classes and sub-asset classes.
+
+Specifically:
+
+1) Position (relative and absolute), 
+
+2) Active risk: Tracking error (allocation and selection effect), 
+ 
+3) Absolute Risk: stand alone risk, diversification benefits, 
+
+4) Beta sensitivity above the benchmark 
+
+5) List of key holdings that generate the larger risk contributions and the larger diversification benefits
 
 
 
 ## Technology
 
-* Engine it was made in `Matlab`
-* The data is coming from `Bloomberg API` on `Excel`, together with `SQL databases` for local securities
-* `Excel`is used for the graphs and general display of the calculation made in MatLab
+* Engine calculator was made in `Matlab`. As of now comments are in Spanish, but it will be translated into English soon
+* Data sources are `Bloomberg API`, together with `SQL databases` for local securities
+* `Excel`is used for the graphs and general display of Matlab calculations
 * `Èxcel`is used to generate the pdf file report as an export
 ---
 
 ## Usage
 
-Below you will see images of the report. The first one is of the Overview, and the other are some of the asset classes.
+Below you will see images of the report. The first one is of the Overview, and the other are some of the asset classes. Specifications are available after the images of the report.
+
+![Overview_Individual_Fund](Images/1_Risk-Report_OverviewFundA.jpg)
+
+
+Then, for each asset class, a similar analysis is made over the subasset classes, as can be seen in the pictures below.
+
+![SubClasses_Fund](Images/2_Risk-Report_IntlEquityFundA.jpg)
+
+![SubClasses_Fund](Images/3_Risk-Report_LocalEquityFundA.jpg)
+
+Obs: Originally the report was generated in spanish, so a version in spanish is also added in the folder.
+
+Asset classes in Spanish are:
+
+> RVI: Intl equity (Renta Variable Internacional)
+
+> RVN: Local Equity (Renta Variable Nacional)
+
+> RFI: Intl Fixed Income (Renta Fija Internacional)
+
+> RFN: Local Fixed INcome (Renta Fija Nacional)
+
 
 The following are more specifics of each section:
 
@@ -40,30 +75,6 @@ The following are more specifics of each section:
 >6.1) **Top Tracking Error Contributors:** Securities that generated the top 10 major contributions to the Traking Error of the Fund (Overview), or asset class (in the asset class view)
     
 >6.2) **Top 10 Trackin Error Diversifiers:** Securities that generated the top 10 major contributions to diversification, and so decreasing the Traking Error, of the fund 8overview), or in the asset class (asset class view)
-
-
-
-![Overview_Individual_Fund](Images/1_Risk-Report_OverviewFundA.jpg)
-
-
-Then, for each asset class, a similar analysis is made over the subasset classes, as can be seen in the pictures below.
-
-![SubClasses_Fund](Images/2_Risk-Report_IntlEquityFundA.jpg)
-
-![SubClasses_Fund](Images/3_Risk-Report_LocalEquityFundA.jpg)
-
-Obs: Originally the report was generated in spanish, so a version in spanish is also added in the folder.
-
-Asset classes in Spanish are:
-
-> RVI: Intl equity (Renta Variable Internacional)
-
-> RVN: Local Equity (Renta Variable Nacional)
-
-> RFI: Intl Fixed Income (Renta Fija Internacional)
-
-> RFN: Local Fixed INcome (Renta Fija Nacional)
-
 
 ---
 ## Contributors
