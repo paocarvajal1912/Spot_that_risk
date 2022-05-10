@@ -76,6 +76,9 @@ The following are more specifics of each section:
     
 >6.2) **Top 10 Trackin Error Diversifiers:** Securities that generated the top 10 major contributions to diversification, and so decreasing the Traking Error, of the fund 8overview), or in the asset class (asset class view)
 
+
+Specifications of the risk attribution model can be found in the *Risk Attribution model.pdf* file
+
 ---
 ## Contributors
 This project was coded by Paola Carvajal Almeida, paola.antonieta@gmail.com.
